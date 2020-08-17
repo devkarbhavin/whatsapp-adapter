@@ -7,7 +7,7 @@ const fetch = require('node-fetch');
 const flexSession=require("./flex_sessionid")
 const client = require('twilio')(
     'ACa89fb7cc00ba78291caf0ca58fc51572',
-  'f0d556481e674578d968f0b445bd8f7f'
+  '60ae7e29600ca4fb6897c15839a277d3'
 );
 
 var flexChannelCreated;
@@ -26,7 +26,7 @@ function sendChatMessage(serviceSid, channelSid, chatUserName, body) {
       headers: {
         'X-Twilio-Webhook-Enabled': 'true',
         Authorization: `Basic ${base64.encode(
-          `ACa89fb7cc00ba78291caf0ca58fc51572:f0d556481e674578d968f0b445bd8f7f`
+          `ACa89fb7cc00ba78291caf0ca58fc51572:60ae7e29600ca4fb6897c15839a277d3`
         )}`
       }
     }
