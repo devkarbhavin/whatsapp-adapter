@@ -18,7 +18,7 @@ const development = {
     clientEmail: 'dialogflow-qrjgan@idbibankwhatsapp-v9wc.iam.gserviceaccount.com'
   },
   viber:{
-    webhookUrl : 'http://35.198.241.88:3000',
+    webhookUrl : 'https://agile-garden-38620.herokuapp.com',
     botName : 'agcvibertestbot',
     botAvatarLink : 'https://www.ebl.com.bd/download/DIA_logo.jpg',
     viberToken : '4b320043b2e7dd8e-fa7fbafbc56f4bb8-97951eefae8e3f08'

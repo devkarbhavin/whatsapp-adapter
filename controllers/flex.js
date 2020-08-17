@@ -53,7 +53,7 @@ function createNewChannel(flexFlowSid, flexChatService, chatUserName) {
         .webhooks.create({
           type: 'webhook',
           'configuration.method': 'POST',
-          'configuration.url': `http://35.198.241.88:3000/new-message?channel=${channel.sid}`,
+          'configuration.url': `https://agile-garden-38620.herokuapp.com/new-message?channel=${channel.sid}`,
           'configuration.filters': ['onMessageSent']
         })
         .then(() => client.chat
@@ -62,7 +62,7 @@ function createNewChannel(flexFlowSid, flexChatService, chatUserName) {
         .webhooks.create({
           type: 'webhook',
           'configuration.method': 'POST',
-          'configuration.url': `http://35.198.241.88:3000/channel-update`,
+          'configuration.url': `https://agile-garden-38620.herokuapp.com/channel-update`,
           'configuration.filters': ['onChannelUpdated']
         }))
     })
