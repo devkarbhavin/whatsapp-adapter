@@ -7,7 +7,7 @@ Viber connector for Dialogflow ChatBot
 - To know more about Dialogflow REST API and generating the JSON key please refer [Dialogflow-REST-API-Middleware](https://github.com/satishgunjal/Dialogflow-REST-API-Middleware.git)
 - Now run below command to install the dependencies in the local node_modules folder
   ```
-  $ npm install
+  $ npm install --
   ```
 - Application controller conatins below files
   ```
