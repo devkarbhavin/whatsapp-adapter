@@ -25,7 +25,7 @@ exports.whatsapp_webhook_request = async function (req, res) {
 
 exports.delete_channel=async function(req,res){
     const accountSid = 'ACa89fb7cc00ba78291caf0ca58fc51572';
-const authToken = '60ae7e29600ca4fb6897c15839a277d3';
+const authToken = 'c27fedbba79e8e94c9629cf778a77dc0';
 const client = require('twilio')(accountSid, authToken);
 
 client.flexApi.channel('CH8336134570934bda8350286ef3ac787e').remove();
@@ -44,7 +44,7 @@ exports.new_message=function(request, response) {
         console.log(request.body.ChannelSid)
         
         const twilio=require('twilio')
-        const client=twilio('ACa89fb7cc00ba78291caf0ca58fc51572','60ae7e29600ca4fb6897c15839a277d3')
+        const client=twilio('ACa89fb7cc00ba78291caf0ca58fc51572','c27fedbba79e8e94c9629cf778a77dc0')
         console.log(request.body)
         //call mapSessionIdGet
         var sessionData= flexSession.mapSessionIdGet(request.body.ChannelSid)
@@ -70,7 +70,7 @@ exports.new_message=function(request, response) {
         console.log("isAgentJustAssigned = "+isAgentJustAssigned)
         if(isAgentJustAssigned!=undefined){
             const twilio=require('twilio')
-            const client=twilio('ACa89fb7cc00ba78291caf0ca58fc51572','60ae7e29600ca4fb6897c15839a277d3')
+            const client=twilio('ACa89fb7cc00ba78291caf0ca58fc51572','c27fedbba79e8e94c9629cf778a77dc0')
             //call mapSessionIdGet
             
             console.log(sessionData[0])
